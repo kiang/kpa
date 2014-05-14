@@ -1,0 +1,1391 @@
+#login {
+	margin: 100px auto;
+	width: 500px;
+}
+
+#login .submit-buttons {
+	margin-top: 10px;
+	text-align: center;
+}
+
+#login h2 {
+	color: #2366A9;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 20px;
+	height: 20px;
+	padding: 5px 10px;
+	border: 1px solid #BBB;
+	background-image: url('https://ecbank.com.tw/images/listbgs.gif');
+	background-repeat: repeat-x;
+}
+
+#login table {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border: 1px solid #E3E8CC;
+}
+
+#login table td {
+	padding: 8px;
+	border-bottom: 1px solid #E3E8CC;
+	font-size: 13px;
+}
+
+#login table tr:last-child td {
+	border-bottom: 0;
+}
+
+#login table .key {
+	width: 25%;
+	text-align: right;
+	background-color: #F8F8F3;
+	font-weight: normal;
+	border-right: 1px solid #E3E8CC;
+	color: #333;
+}
+
+#login table .value {
+	width: 75%;
+}
+
+#login input[type=submit] {
+	padding: 5px 20px;
+}
+
+#login .error {
+	font-size: 15px;
+	line-height: 20px;
+	color: #D33;
+	padding: 5px 0;
+}
+
+#login .error a {
+	color: #D33;
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+/*
+* Album CSS Global
+* Copyright 2010 Bamboocat Digital Corp.
+* Version 1.0
+*/
+
+/* Album
+----------------------------*/
+#album {}
+
+#album .albumBase {
+	/*border: 0 solid #000;
+	border-width: 1px 0;*/
+	
+	margin-bottom: 10px;
+	
+	float: left;
+	width: 48%;
+	margin: 0 1%;
+}
+#album .albumBaseHover {
+	background-color: #eee;
+}
+
+#album .albumBase .albumBaseInner {
+	padding: 5px 2px;
+	height: 90px;
+}
+
+#album .albumBase .albumCover {
+	float: right;
+	width: 120px;
+	
+	overflow: hidden;
+}
+#album .albumBase .albumCover a {
+	width:120px;
+	height: 90px;
+}
+#album .albumBase .albumCover img {
+	float: left;
+}
+
+#album .albumBase .title {
+	margin-right: 135px;
+	font-size: 1.2em;
+	
+	text-align: center;
+}
+
+#album p.back {
+	text-align: right;
+}
+
+/* Album Portal
+----------------------------*/
+#portal_album {}
+
+#portal_album li {
+	list-style: none;
+}
+
+#portal_album .albumBase {
+	float: left;
+	width: 120px;
+	height: 90px;
+	padding: 15px;
+}
+
+#portal_album .albumBase .albumCover {
+	margin: 0 auto;
+}
+
+#portal_album .albumBase .title {
+	text-align: center;
+}
+
+/* New Photo List
+-----------------------------------*/
+#album .album_gallery ul {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+#album .album_gallery ul li {
+	float: left;
+	list-style: none;
+	
+	width: 180px;
+	margin-right: 43px;
+	margin-bottom: 10px;
+}
+#album .album_gallery ul li.last {
+	margin-right: 0px;
+}
+#album .album_gallery ul li.hidden {
+	display: none;
+}
+#album .album_gallery ul li a {
+	display: block;
+	width: 180px;
+	height: 135px;
+	overflow: hidden;
+}
+
+#donation {
+	width: 960px;
+	margin: 20px auto;
+	font-size: 13px;
+	line-height: 20px;
+	color: #666;
+}
+
+#donation select,
+#donation input[type=radio],
+#donation input[type=checkbox] {
+	margin: 0;
+	vertical-align: middle;
+}
+
+#donation input[type=text][disabled=disabled] {
+	background: #EBEBE4;
+}
+
+#donation a {
+	color: #4F81BD;
+	text-decoration: underline;
+}
+
+#donation ul {
+	margin-left: 26px;
+}
+
+#donation ul li {
+	list-style: cjk-ideographic;
+}
+
+#donation ul > ul li {
+	list-style: decimal;
+}
+
+#donation label {
+	margin-right: 10px;
+}
+
+#donation label + .error {
+	margin-left: 0;
+}
+
+#donation .buttons input {
+	padding: 5px 20px;
+	margin: 0 5px;
+}
+
+#donation .error {
+	font-weight: normal;
+	color: red;
+	margin-left: 10px;
+}
+
+#donation .listItem {
+	margin-right: 5px;
+	font-size: 16px;
+}
+
+#donation .red {
+	color: #900;
+}
+
+#donation .center {
+	text-align: center;
+}
+
+#donation .box {
+	margin: 10px 0;
+}
+
+#donation .buttons {
+	text-align: center;
+}
+
+#donation .content,
+#donation .note,
+#donation .table table {
+	border: 1px solid #E3E8CC;
+}
+
+#donation .content,
+#donation .note {
+	padding: 10px;
+}
+
+#donation .title {
+	color: #2366A9;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 20px;
+	padding: 5px 10px;
+	border: 1px solid #BBB;
+	background-image: url('https://ecbank.com.tw/images/listbgs.gif');
+	background-repeat: repeat-x;
+}
+
+#donation .content .all span {
+	font-weight: normal;
+	color: #008000;
+}
+
+#donation .note {
+	margin-top: 10px;
+}
+
+#donation .table table {
+	width: 100%;
+}
+
+#donation .table table td {
+	border-bottom: 1px solid #E3E8CC;
+	font-size: 13px;
+}
+
+#donation .table table tr:last-child td {
+	border-bottom: 0;
+}
+
+#donation .table td {
+	padding: 5px 10px;
+	vertical-align: middle;
+	line-height: 25px;
+}
+
+#donation .table .key {
+	width: 15%;
+	text-align: right;
+	background-color: #F8F8F3;
+	font-weight: normal;
+	border-right: 1px solid #E3E8CC;
+	color: #333;
+}
+
+#donation .table .value {
+	width: 85%;
+}
+
+#donation .profile .table .value input[type='text'] {
+	width: 150px;
+}
+
+#donation .method .table .value input[name='amount'] {
+	width: 75px;
+	margin: 0 10px;
+}
+
+#donation .profile .table .value input[type='text']#zipcode {
+	width: 100px;
+}
+
+#donation .profile .table .value input[type='text']#address,
+#donation .profile .table .value input[type='text']#receipt {
+	width: 300px;
+}
+
+#donation .profile .table .value input[type='text']#address {
+	margin-top: 5px;
+}
+
+#donation .profile .table .value input[type='text']#email,
+#donation .profile .table .value input[type='text']#receipt,
+#donation .profile .table .value input[type='text']#anonymous_email {
+	margin-right: 10px;
+}
+
+#donation .notice .onymous {
+	margin-top: 10px;
+}
+
+#zipcode_select {
+	display: none;
+}
+
+#gohome {
+	text-align: right;
+	padding: 0 1px;
+	display: none;
+}
+
+/*
+* News CSS Global
+* Copyright 2010 Bamboocat Digital Corp.
+* Version 1.0
+*/
+
+#news {
+	font-size: 15px;
+}
+
+#news .back {
+	float: right;
+	font-size: 12px;
+}
+
+#news .news-list p {
+	margin-bottom: 8px;
+}
+
+#news .news-detail {
+	
+}
+
+#news .news-detail .date {
+	padding-left: 4px;
+	color: #666;
+	font-size: 0.8em;
+	
+}
+
+#news .news-detail .message {
+	margin-top: 10px;
+	padding: 4px 6px;
+}
+
+/* Portal
+---------------------------------*/
+#portal_news {}
+
+#portal_news ul {
+	margin: 6px 0;
+	margin-left: 2em;
+	min-height: 100px;
+}
+
+/*
+* Stream Album CSS Global
+* Copyright 2010 Bamboocat Digital Corp.
+* Version 1.0
+*/
+
+/* Stream Album
+----------------------------*/
+#stream {}
+
+#stream p.back {
+	text-align: right;
+}
+
+#stream .albumBase {
+	float: left;
+	width: 210px;
+	height: 150px;
+	padding: 15px;
+}
+
+#stream .albumBase .albumCover {
+	margin: 0 auto;
+}
+
+#stream .albumBase .title {
+	text-align: center;
+}
+
+/* Stream Portal
+----------------------------*/
+#portal_stream {}
+
+#portal_stream li {
+	list-style: none;
+	float: left;
+	width: 190px;
+	padding: 8px 15px;
+}
+
+#portal_stream .albumBase {
+	margin: 0 auto;
+	width: 155px;
+	height: 160px;
+}
+
+#portal_stream .albumBase hr {
+	height: 1px;
+	line-height: 1px;
+	border: 0;
+	border-bottom: 1px dashed #ddd;
+	padding: 0 8px;
+	margin: 2px 0;
+}
+
+#portal_stream .albumBase .albumCover {
+	margin: 0 auto;
+}
+
+#portal_stream .albumBase .title {
+	text-align: center;
+}
+
+
+/* 
+* CSS Document 
+* Forum module
+* Version 1.0
+*/
+
+#forum {
+	font-size: 15px;
+}
+
+#forum table {
+	width: 100%;
+	margin-bottom: 8px;
+}
+
+#forum th {
+	text-align: left;
+	padding: 6px 4px;
+}
+
+#forum td {
+	text-align: left;
+	padding: 4px;
+}
+
+#forum .forumlist span.forum-padding {
+	padding-right: 2em;
+}
+
+/* Posting
+------------------------------------*/
+#forum .posting dt {
+	width: 25%;
+}
+
+#forum .posting dd {
+	margin-left: 26%;
+}
+
+#forum .posting dd.full {
+	clear: left;
+	margin-left: 0px;
+	width: 99%;
+}
+
+#forum .posting ul.panel {
+	padding-left: 0 !important;
+}
+
+/* Forum list
+------------------------------------*/
+.forumlist .bg_cat, .forumlist .bg_link {
+	background-color: #DBE3E6;
+}
+
+.forumlist th {
+	border-bottom: 2px solid #ccc;
+}
+
+.forumlist td {
+	border-bottom: 1px solid #eee;
+}
+
+.forumlist .bg_post td {
+	height: 3em;
+}
+
+.forumlist .forum_name {
+	margin-bottom: 8px;
+}
+
+.forumlist .forum_desc {
+	margin-top: 10px;
+	color: #999;
+	font-size: 0.8em;
+}
+
+.forumlist .bg1 {
+	background-color: #fff;
+}
+.forumlist .bg2 {
+	background-color: #E6ECEC;
+}
+
+/* Topic list
+------------------------------------*/
+.topiclist .bg_cat, .forumlist .bg_link {
+	background-color: #DBE3E6;
+}
+
+.topiclist th {
+	border-bottom: 2px solid #ccc;
+}
+
+.topiclist td {
+	border-bottom: 1px solid #eee;
+	height: 3em;
+}
+
+.topiclist .time {
+	padding-left: 2px;
+	font-size: 0.9em;
+	color: #444;
+}
+
+.topiclist .bg1 {
+	background-color: #fff;
+}
+.topiclist .bg2 {
+	background-color: #E6ECEC;
+}
+
+.topiclist a .order-mark {
+	color: #999;
+}
+
+
+/* Post list
+------------------------------------*/
+.post-buttons {
+	margin: 4px 0;
+}
+
+#postList {}
+
+#postList .controls {
+	float: right;
+}
+
+#postList .postPanel, #postList .topicPanel {
+	padding: 15px;
+	border-bottom: 1px solid #eee;
+}
+
+.topicPanel .post-time {
+	color: #666;
+	font-size: 13px;
+	padding-left: 4px;
+}
+
+.postPanel .post-time {
+	color: #666;
+	font-size: 13px;
+	float: right;
+	margin-left: 8px;
+}
+
+#postList .message {
+	margin: 8px 0 8px 4px;
+}
+
+#postList .message ol, #postList .message ul {
+	padding-left: 2em;
+}
+
+#postList .message a {
+	text-decoration: underline;
+}
+
+#postList .footer {
+	font-size: 13px;
+	margin-top: 8px;
+}
+
+.footer .prev-next {
+	text-align: right;
+	margin-bottom: 4px;
+}
+
+/* Image uploader
+------------------------------------*/
+#uploadBlock {
+	height: 26px;
+	margin-bottom: 4px;
+	vertical-align: middle;
+}
+#ajaxUpload {
+	padding: 0 8px;
+}
+#uploadStatus{
+	font-family:Arial;
+	height: 26px;
+	vertical-align: middle;
+	font-weight: 600;
+}
+ul#imageFiles { list-style:none; padding:0; margin:0; }
+ul#imageFiles li { padding: 5px; margin-bottom:2px; float:left; margin-right:10px; background-color: #DAFEEF; }
+ul#imageFiles li.default { padding: 5px; margin-bottom:2px; float:left; margin-right:10px; background-color: #FFD7D7; }
+ul#imageFiles li img{ width: 96px; height: 72px; margin: 5px; }
+ul#imageFiles li hr { border: 0; border-bottom: 1px dashed #aaa; line-height: 1px; height: 1px; font-size: 1px; margin: 2px 0; }
+ul#imageFiles li span.right { float:right; }
+
+/* Portal
+---------------------------------*/
+#portal_forum {}
+
+#portal_forum ul {
+	margin: 6px 0;
+	margin-left: 2em;
+	min-height: 100px;
+}
+
+#portal_forum span.date {
+	padding-left: 8px;
+	font-size: 0.8em;
+	color: #666;
+}
+
+/*
+* Banner CSS
+*/
+
+
+/*
+* News CSS Global
+* Copyright 2010 Bamboocat Digital Corp.
+* Version 1.0
+*/
+
+#news {
+	font-size: 15px;
+}
+
+#news .back {
+	float: right;
+	font-size: 12px;
+}
+
+#news .news-list p {
+	margin-bottom: 8px;
+}
+
+#news .news-detail {
+	
+}
+
+#news .news-detail .date {
+	padding-left: 4px;
+	color: #666;
+	font-size: 0.8em;
+	
+}
+
+#news .news-detail .message {
+	margin-top: 10px;
+	padding: 4px 6px;
+}
+
+/* Portal
+---------------------------------*/
+#portal_news {}
+
+#portal_news ul {
+	margin: 6px 0;
+	margin-left: 2em;
+	min-height: 100px;
+}
+
+/* 
+* item.css
+* 2010 Bamboocat Digital Corp.
+* Version 1.0
+*/
+
+.itemSpace {
+	margin: 10px 0;
+}
+
+.itemBlock {
+	border: 1px solid #efefef;
+	border-width: 1px 0;
+	padding: 8px 0;
+	height: 126px;
+	
+	margin-bottom: 4px;
+}
+
+.itemImgThumb a {
+	float: left;
+	
+	width: 120px;
+	height: 120px;
+	
+	overflow: hidden;
+	
+	margin-left: 20px;
+}
+
+.itemImgThumb img {
+	float: left;
+	width: 120px;
+}
+
+.itemImgThumb a:hover img {
+	/*border: 1px solid #900;*/
+}
+
+.itemImgThumb .noItemImage {
+	line-height: 120px;
+	height: 120px;
+	width: 120px;
+	background-color: #eee;
+	font-size: 11px;
+	
+	vertical-align: middle;
+	text-align: center;
+}
+
+.itemInfo {
+	margin-top: 5px;
+	margin-left: 180px;
+}
+
+.itemInfo .itemName {
+	display: block;
+	
+	height: 50px;
+	
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.itemInfo strong {
+	display: block;
+	font-size: 15px;
+	color: #cc0000;
+}
+
+.itemPriceOrig {
+	font-size: 13px;
+	color: #999;
+	vertical-align: middle;
+}
+.itemPriceOrig span {
+	text-decoration: line-through;
+}
+
+/* Cat Menu
+------------------------------- */
+/* These styles create the dropdown menus. */
+.itemListInCat {
+	float: left;
+	width: 100%;
+}
+#bodyMenu {
+	display: block;
+	height: 20px;
+}
+
+#catMenu {
+   margin: 0 !important;
+   padding: 0 !important;
+   margin-left: 5px;
+   height: 20px;
+}
+#catMenu li {
+   list-style: none;
+   float: left;
+   padding: 0;
+}
+#catMenu li a {
+   display: block;
+   padding: 4px 8px;
+   background-color: #5e8ce9;
+   color: #fff;
+   text-decoration: none; 
+}
+#catMenu li ul {
+   display: none; 
+   background-color: #69f;
+   
+   padding: 0 !important;
+   margin: 0 !important;
+}
+#catMenu li:hover ul, #catMenu li.hover ul {
+   display: block;
+   position: absolute;
+   margin: 0;
+   padding: 0; 
+}
+#catMenu li:hover li, #catMenu li.hover li {
+   float: none; 
+}
+#catMenu li:hover li a, #catMenu li.hover li a {
+   background-color: #69f;
+   border-bottom: 1px solid #fff;
+   color: #000; 
+}
+#catMenu li li a:hover {
+   background-color: #8db3ff;
+}
+
+/* Detail
+------------------------------- */
+.itemContent {}
+
+.itemLeft {
+	float: left;
+	width: 205px;
+}
+
+.itemImg {
+	border: 1px solid #efefef;
+	padding: 2px;
+	
+	width: 200px;
+}
+
+.itemImg img {
+	float: left;
+	width: 200px;
+}
+
+.itemImg .noItemImage {
+	line-height: 200px;
+	height: 200px;
+	width: 200px;
+	background-color: #eee;
+	font-size: 11px;
+	
+	vertical-align: middle;
+	text-align: center;
+}
+
+.itemMain {
+	margin-left: 210px;
+	padding-top: 10px;
+}
+.itemMain .views {
+	font-size: 12px;
+}
+
+.itemMainInfo {
+	height: 200px;
+}
+
+.itemMain strong {
+	font-size: 18px;
+}
+
+.itemPriceOrigBlock {
+	/*position: absolute;
+	margin-top: 65px;
+	margin-left: 200px;*/
+	line-height: 15px;
+	vertical-align: middle;
+	font-size: 13px;
+	color: #999;
+}
+.itemPriceOrigBlock span {
+	text-decoration: line-through;
+}
+.itemStock {
+	font-weight: 600;
+	color: #666;
+	font-size: 13px;
+}
+
+.itemPrice {
+	/*position: absolute;*/
+	margin-top: 80px;
+	margin-left: 200px;
+}
+
+.itemPrice strong {
+	display: block;
+	font-size: 18px;
+	color: #900;
+	margin-bottom: 4px;
+}
+
+.itemDesc { min-height: 250px; }
+
+.itemDesc h3 {
+	font-size: 16px;
+	border-bottom: 1px solid #efefef;
+	
+	margin-bottom: 5px;
+	padding: 2px 4px;
+}
+
+.itemDesc .text {
+	padding: 0px 8px;
+	font-size: 14px;
+}
+
+/* item attachments
+----------------------------------*/
+.itemAttachments {
+	width: 200px;
+}
+
+.itemAttachments .attachBlock {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 6px;
+}
+
+.itemAttachments .attachBlock a {
+	float: left;
+	
+	width: 50px;
+	height: 50px;
+	padding: 2px;
+	
+	border: 1px solid #999;
+	
+	margin: 0 auto;
+}
+.itemAttachments .attachBlock a:hover {
+	border-color: #800;
+}
+
+.itemAttachments .attachBlock a img {
+	float: left;
+}
+
+/* Cart Msg Form
+----------------------------------*/
+#cartForm {}
+
+#cartMsg {
+	margin-bottom: 25px;
+}
+
+#cartForm a {
+	font-size: 12px;
+	color: #fff;
+	background-color: #369;
+	padding: 3px 4px;
+	border: 1px solid #999;
+	margin: 0px 8px;
+}
+
+#cartForm a:hover {
+	text-decoration: none;
+}
+
+/* Order
+--------------------------------*/
+.row1 { background-color: #fff; }
+.row2 { background-color: #efefef; }
+.row3 { background-color: #E8F0E8; }
+
+/* Portal
+---------------------------------*/
+.portal_items {}
+.portal_items ul {}
+
+.portal_items li {
+	list-style: none;
+}
+
+.portal_items .itemBase {
+	float: left;
+	width: 140px;
+	height: 150px;
+	padding: 8px 15px;
+}
+
+.portal_items .itemBase .itemCover {
+	width: 120px;
+	margin: 0 auto;
+}
+
+.portal_items .itemBase .itemCover a {
+	float: left;
+	width: 120px;
+	height: 120px;
+	
+	overflow: hidden;
+}
+
+.portal_items .itemBase .itemCover img {
+	float: left;
+	width: 120px;
+}
+.portal_items .itemBase .itemCover .noItemImage {
+	line-height: 120px;
+	height: 120px;
+	width: 120px;
+	background-color: #eee;
+	font-size: 11px;
+	
+	vertical-align: middle;
+	text-align: center;
+}
+
+.portal_items .itemBase .title {
+	width: 140px;
+	
+	text-align: center;
+	height: 30px;
+	line-height: 15px;
+	vertical-align: middle;
+	
+	overflow: hidden;
+}
+
+.portal_items .itemNone {
+	text-align: center;
+}
+
+.cartMenu {
+	text-align: right;
+	margin-bottom: 4px;
+}
+.cartMenu a {
+	margin-left: 4px;
+}
+
+/* Filter bar */
+.filterBar {
+	background-color: #efefef;
+	padding: 6px;
+	margin: 6px 0;
+	
+	font-size: 12px;
+	
+	text-align: right;
+}
+
+.filterBar a {
+	padding: 2px 4px;
+}
+
+.filterBar a.selected {
+	background-color:#666;
+	color: #fff;
+}
+
+.ui-datepicker {
+	font-size: 12px !important;
+}
+
+.search_condition {
+	padding: 6px 0;
+}
+
+.search_condition span {
+	font-size: 12px;
+	padding-left: 6px;
+}
+
+/* Payment buttons */
+.payBtn {}
+
+.payBtn a {
+	display: inline-block;
+	padding: 4px 8px;
+	margin: 0 4px;
+	border: 1px solid #999;
+	background-color: #eee;
+	color: #333;
+}
+
+/*
+* Buttons
+*/
+
+/* Item
+----------------------------*/
+.cart_btn a span { 
+	display: inline-block;
+	width: 130px; 
+	height: 29px; 
+	background: url("./styles/defaultStyle/theme/images/buy-icon.png") 0 0 repeat-x;
+}
+.cart_btn a:hover span { background-position: 100% 0;  }
+.cart_btn a span.text { display: none; }
+
+/* Forum
+----------------------------*/
+/* Global setting */
+#forum .buttons a span {
+	display: inline-block;
+}
+#forum .buttons a:hover span {
+	background-position: 100% 0;
+}
+#forum .buttons a span.text {
+	display: none;
+}
+
+/* Posting buttons */
+#forum .post-buttons a span {
+	width: 98px;
+	height: 28px;
+	background-repeat: repeat-x;
+}
+#forum .button-newtopic span {
+	background-image: url('./styles/defaultStyle/theme/images/post_newtopic.png');
+}
+#forum .button-reply span {
+	background-image: url('./styles/defaultStyle/theme/images/post_reply.png');
+}
+
+/* Control buttons */
+#forum .controls a span {
+	width: 57px;
+	height: 28px;
+	background-repeat: repeat-x;
+}
+#forum .button-edit span {
+	background-image: url('./styles/defaultStyle/theme/images/post_edit.png');
+}
+#forum .button-delete span {
+	background-image: url('./styles/defaultStyle/theme/images/post_delete.png');
+}
+
+/* CSS Document */
+
+.loginBtnFacebook a span {
+	display: inline-block;
+	width: 61px;
+	height: 22px;
+	background-image: url('./styles/defaultStyle/theme/images/login_facebook.gif');
+	background-repeat: no-repeat;
+	margin-right: 8px;
+}
+
+.loginBtnPlurk a span {
+	display: inline-block;
+	width: 61px;
+	height: 22px;
+	background-image: url('./styles/defaultStyle/theme/images/login_plurk.gif');
+	background-repeat: no-repeat;
+	
+	margin-right: 8px;
+}
+
+.connectLoginBtn a span.text {
+	display: none;
+}
+
+/* UCP
+----------------------------------------*/
+#ucp {
+	background-color: #c3e2cc;
+}
+
+#ucp .menu {
+	float: left;
+	width: 200px;
+	
+	background-color: #c3e2cc;
+}
+
+#ucp .menu h3 {
+	list-style: none;
+	padding: 8px 0;
+	background-color: #e28f2f;
+	
+	text-align: center;
+	color: #762708;
+	
+	margin-bottom: 0;
+}
+
+#ucp .menu ul {
+	padding: 2px 25px;
+	list-style: none;
+}
+
+#ucp .menu li {
+	padding: 4px 0;
+	background: none;
+	border-bottom: 1px dashed #fff;
+	text-align: left;
+	
+	color: #fffc00;
+}
+
+#ucp .menu li a {
+	display: block;
+	padding: 2px 0;
+	padding-left: 20px;
+	
+	color: #1f4b07;
+}
+#ucp .menu li a:hover {
+	text-decoration: none;
+	
+	background-color: #77cf35;
+	color: #fff;
+}
+#ucp .menu li a span {
+	color: #fffc00;
+}
+
+#ucp .content {
+	margin-left: 200px;
+	min-height: 450px;
+	
+	background-color: #fff;
+	
+	padding: 15px 15px;
+}
+
+#ucp .content h1 {
+	background-image: url('./styles/defaultStyle/theme/images/subject-bg.gif');
+	background-repeat: no-repeat;
+	height: 44px;
+	overflow: hidden;
+	
+	font-size: 18px;
+	line-height: 42px;
+	vertical-align: middle;
+	color: #1c6b1f;
+	padding-left: 40px;
+	
+	margin-bottom: 8px;
+}
+
+#ucp table {
+	width: 100%;
+	border: 1px solid #ccc;
+	background-color: #fff;
+}
+
+#ucp fieldset {
+	margin: 10px 0;
+}
+
+#ucp th {
+	padding: 4px;
+	background-color: #E3E4DC;
+	font-weight: 600;
+}
+
+#ucp td {
+	padding: 6px 4px;
+}
+
+
+/* Hot items
+--------------------------*/
+#hotItems {
+	background-color: #eee;
+	margin: 8px 0;
+	float: left;
+	
+	width: 100%;
+}
+
+#hotItems .inner {
+	padding: 6px 12px;
+}
+
+.hotList .itemSpace {
+	float: left;
+	width: 48%;
+	padding: 0 6px;
+}
+.hotList .itemBlock .itemInfo {
+	margin-left: 160px;
+}
+.hotList .itemBlock .itemName {
+	line-height: 25px;
+	overflow: hidden;
+}
+.hotList .itemImgThumb .noItemImage {
+	background-color: #fff;
+}
+
+#hotIcon {
+	display: inline-block;
+	height: 22px;
+	width: 22px;
+	vertical-align: text-bottom;
+	
+	background-image: url('./styles/defaultStyle/theme/images/hot_items_22.png');
+}
+
+/* Relate items
+---------------------------*/
+#relateItems {
+	margin-bottom: 12px;
+}
+
+#relateItems h3 {
+	font-size: 16px;
+	border-bottom: 1px solid #efefef;
+	
+	margin-bottom: 5px;
+	padding: 2px 4px;
+}
+#relateItems .rItemBlock {
+	height: 40px; 
+	overflow: hidden;
+	padding: 4px;
+}
+.rItemBlock .rItemImg {
+	float: left;
+	width: 40px;
+	height: 40px;
+}
+.rItemBlock .rItemImg a {
+	float: left;
+	width: 40px;
+	height: 40px;
+	overflow: hidden;
+}
+.rItemBlock .rItemImg a:hover {
+	text-decoration: none;
+}
+
+.rItemBlock .rItemImg .noItemImage {
+	line-height: 200px;
+	height: 200px;
+	width: 200px;
+	background-color: #eee;
+	font-size: 11px;
+	
+	vertical-align: middle;
+	text-align: center;
+}
+
+.rItemBlock .rItemInfo {
+	margin-left: 50px;
+}
+.rItemBlock .rItemInfo .rItemName {
+	line-height: 20px;
+	height: 20px;
+	overflow: hidden;
+	
+	vertical-align: middle;
+}

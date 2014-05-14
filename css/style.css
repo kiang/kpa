@@ -1,0 +1,85 @@
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {background: transparent; border: 0; margin: 0; padding: 0; vertical-align: baseline; font-size:100%;font-family: Meiryo,"Microsoft JhengHei","メイリオ","MS PGothic","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","ＭＳ ゴシック","ＭＳ Ｐゴシック",Osaka,Georgia,"Bitstream Charter",serif,sans-serif;}
+
+body {line-height: 1; letter-spacing: 1px; _display: inline; _zoom:1; }
+fieldset, img {border: 0;}
+
+/* remember to define focus styles! */
+:focus {outline: 0;}
+
+address, caption, cite, code, dfn,em, strong, th, var, optgroup {font-style: inherit; font-weight: inherit; }
+h1, h2, h3, h4, h5, h6 {font-size: 100%;font-weight: normal;}
+
+abbr, acronym {border: 0;font-variant: normal;}
+
+input, button, textarea,select, optgroup, option {font-family: inherit; font-size: inherit; font-style: inherit; font-weight: inherit; }
+code, kbd, samp, tt { font-size: 100%;}
+
+ins {text-decoration: none;}
+del {text-decoration: line-through;}
+/* ol, ul {list-style: none;} */
+table {border-collapse: collapse; border-spacing: 0;}
+caption, th {text-align: left;}
+sup, sub {font-size: 100%;vertical-align: baseline;}
+
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: '';content: none;}
+
+:link, :visited, ins{text-decoration: none;}
+
+hr {display: block;height: 1px;border: 0;border-top: 1px solid #ccc;}
+
+
+
+
+/* Basic Elements
+-------------------------------------------------*/
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix {display: inline-block;}
+
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;} 
+.clearfix {display: block;} 
+/* End hide from IE-mac */
+
+.breadcrumbs{
+	list-style: none outside none;
+	margin: 3px 0 10px;
+	font-size: 11px;
+}
+.breadcrumbs a{color: #000;text-decoration: none;}
+.breadcrumbs a:hover,
+.breadcrumbs a:active {color: #999;}
+
+hr.hidden{ visibility: hidden;}
+
+a:hover img{opacity: 0.8; filter: alpha(opacity=80); -moz-opacity: 0.8;}
+a:link, a:visited {color: #F75748;text-decoration: none;}
+a:active, a:hover {color: #EA5550;}
+
+.alignleft, img.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 24px;
+	margin-top: 4px;
+}
+.alignright, img.alignright {
+	display: inline;
+	float: right;
+	margin-left: 24px;
+	margin-top: 4px;
+}
+.aligncenter, img.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+img.alignleft, img.alignright, img.aligncenter {margin-bottom: 20px;}

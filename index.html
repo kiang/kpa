@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="no-js"><script id="tinyhippos-injected">if (window.top.ripple) {
+        window.top.ripple("bootstrap").inject(window, document);
+    }</script><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta name="robots" content="noindex,nofollow">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <!-- facebook open graph -->
+        <meta property="og:title" content="改變台灣 從首都開始 | 柯文哲募款網站">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="http://donate.kptaipei.tw/">
+        <meta property="og:image" content="img/donate-header.jpg">
+        <meta property="og:description" content="柯文哲政治獻金募款網站。提供信用卡線上簽帳、ATM虛擬帳號轉帳、便利商店繳費等便利捐款方式。請詳閱說明事項以符合政治獻金法規定。">
+
+        <title>改變台灣 從首都開始 | 柯文哲募款網站</title>
+        <link rel="stylesheet" href="css/stylepc.css">
+        <link rel="stylesheet" id="bones-stylesheet-css" href="css/style.css" type="text/css" media="all">
+        <link href="css/page.css" rel="stylesheet" media="screen">
+        <!--[if IE]>
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <![endif]-->
+        <!--[if lt IE 9]>
+        <link rel='stylesheet' id='bones-ie-only-css' href='css/ie.css' type='text/css' media='all' />
+        <![endif]-->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <!--[if lt IE 8]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+
+    <body class="home blog" style="">
+        <div id="wrapper">
+            <header class="header" role="banner" style="padding: 0px; margin: 0px 0px -20px 0px">
+                <div id="header" class="clearfix" style="position: relative; width: 960px">
+                    <img src="img/donate-header.jpg" alt="banner" style="width: 100%; height: auto; display: block; ">
+                    <a href="https://www.facebook.com/DoctorKoWJ?fref=donate" target="_blank" style="position: absolute; top: 20px; left: 890px"><img src="img/fb_icon.png" width="42px" height="42px"></a>
+                </div>
+            </header>
+
+            <div id="donation">
+                <div id="gohome">
+                    <p><a href="http://donate.kptaipei.tw/">回首頁</a></p>
+                </div>
+
+                <div id="donate">
+                    <form action="http://donate.kptaipei.tw/index.php?i=donation&action=pay" method="POST" id="donateForm">
+                        <div class="donater box">
+                            <div class="title">捐款者身分別</div>
+                            <div class="content">
+                                <input type="radio" name="donater" value="0" id="onymous" checked=""><label for="onymous">&nbsp;個人</label>
+                                <input type="radio" name="donater" value="0" id="anonymous"><label for="anonymous">&nbsp;匿名捐款</label>
+                                <span>（個人具名捐款可抵扣綜合所得稅）</span>
+                                <span class="anonymous red" style="display: none;">匿名捐款時使用各項捐款方式上限為新台幣 1 萬元。</span>
+                            </div>
+                            <div class="note onymous">
+                                <p>「個人」包括下列情形：</p>
+                                <ul>
+                                    <ul>
+                                        <li>獨資或數人合夥方式經營之事務所、醫院、診所、補習班。</li>
+                                        <li>非醫療社團法人之醫院。</li>
+                                    </ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="profile box">
+                            <div class="title">捐款人基本資料</div>
+                            <div class="table">
+                                <div class="onymous">
+                                    <table cellpadding="0" cellspacing="0">
+                                        <tbody>
+                                            <tr>
+                                                <td class="key">真實姓名</td>
+                                                <td class="value"><input type="text" name="name"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="key">身份證字號</td>
+                                                <td class="value"><input type="text" name="idn"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="key">行動電話</td>
+                                                <td class="value"><input type="text" name="mobile"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="key">市內電話</td>
+                                                <td class="value"><input type="text" name="tel"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="key">電子郵件</td>
+                                                <td class="value">
+                                                    <input type="text" name="email" id="email">
+                                                    <input type="checkbox" name="event" value="1" id="event" checked="">
+                                                    <label for="event">&nbsp;同意收到後續柯文哲競選活動活動訊息</label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="key">寄送收據地址</td>
+                                                <td class="value">
+                                                    <div id="zipcode_input">
+                                                        郵遞區號（3 + 2）
+                                                        <input type="text" name="zipcode" id="zipcode">
+                                                        <input type="button" value="郵遞區號快速選擇" onclick="showZipcodeSelect();">
+                                                    </div>
+                                                    <div id="zipcode_select">
+                                                        <select name="city" id="city">
+                                                            <option value="">--- 選擇城市 ---</option>
+
+                                                            <option value="1">臺北市
+                                                            </option>
+
+                                                            <option value="2">基隆市
+                                                            </option>
+
+                                                            <option value="3">新北市
+                                                            </option>
+
+                                                            <option value="4">連江縣
+                                                            </option>
+
+                                                            <option value="5">宜蘭縣
+                                                            </option>
+
+                                                            <option value="7">新竹市
+                                                            </option>
+
+                                                            <option value="8">新竹縣
+                                                            </option>
+
+                                                            <option value="9">桃園縣
+                                                            </option>
+
+                                                            <option value="10">苗栗縣
+                                                            </option>
+
+                                                            <option value="11">臺中市
+                                                            </option>
+
+                                                            <option value="12">彰化縣
+                                                            </option>
+
+                                                            <option value="13">南投縣
+                                                            </option>
+
+                                                            <option value="14">嘉義市
+                                                            </option>
+
+                                                            <option value="15">嘉義縣
+                                                            </option>
+
+                                                            <option value="16">雲林縣
+                                                            </option>
+
+                                                            <option value="17">臺南市
+                                                            </option>
+
+                                                            <option value="18">高雄市
+                                                            </option>
+
+                                                            <option value="20">澎湖縣
+                                                            </option>
+
+                                                            <option value="21">金門縣
+                                                            </option>
+
+                                                            <option value="22">屏東縣
+                                                            </option>
+
+                                                            <option value="23">臺東縣
+                                                            </option>
+
+                                                            <option value="24">花蓮縣
+                                                            </option>
+
+                                                        </select>
+                                                        <select name="area" id="area">
+                                                            <option value="">--- 選擇區域 ---</option>
+                                                        </select>
+                                                        <select name="street" id="street">
+                                                            <option value="">--- 選擇街道 ---</option>
+                                                        </select>
+                                                        <select name="number" id="number">
+                                                            <option value="">--- 選擇門牌號碼範圍 ---</option>
+                                                        </select>
+                                                        <input type="button" value="取消" onclick="showZipcodeInput();">
+                                                    </div>
+                                                    <input type="text" name="receipt" id="receipt">
+                                                    <span class="red">相關收據，會在款項撥款入帳後開立</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="key">戶籍地址</td>
+                                                <td class="value">
+                                                    <input type="text" name="address" id="address">
+                                                    <input type="checkbox" name="sameAsAddress" value="1" id="sameAsAddress">
+                                                    <label for="sameAsAddress">&nbsp;同寄送收據地址</label>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="anonymous" style="display: none;">
+                                    <table cellpadding="0" cellspacing="0">
+                                        <tbody>
+                                            <tr>
+                                                <td class="key">電子郵件</td>
+                                                <td class="value">
+                                                    <input type="text" name="anonymous_email" id="anonymous_email" disabled="">
+                                                    <input type="checkbox" name="anonymous_event" value="1" id="anonymous_event">
+                                                    <label for="anonymous_event">&nbsp;同意收到後續柯文哲競選活動活動訊息</label>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="note">
+                                <p class="onymous"><span class="listItem">◎</span>請捐款人務必提供完整資料。如未能提供資料，致使無法開立政治獻金收據者，依政治獻金法規定該筆捐款需全數繳國庫。</p>
+                                <p><span class="listItem">◎</span>主要法源依據：政治獻金法（民國99年01月27日修正）第 5、6、7、8、9、12、13、14、18、19 條。</p>
+                            </div>
+                        </div>
+                        <div class="notice box">
+                            <div class="title">注意事項</div>
+                            <div class="content">
+                                <ul>
+                                    <li>捐贈者須具有中華民國國籍並具有選舉權 (年滿20歲且未被褫奪公權)。</li>
+                                    <li>任何人不得以本人以外之名義捐贈。</li>
+                                    <li>捐贈者不得為同一種選舉 (103年台北市長選舉) 之擬參選人。</li>
+                                    <li>擬以匿名方式捐贈，其總額不得超過新台幣1萬元。</li>
+                                    <li>個人對同一擬參選人捐贈總額不得超過新台幣10萬元。</li>
+                                    <li>個人對不同擬參選人每年度(103年)捐贈總額不得超過新台幣20萬元，抵稅額上限為新台幣20萬元。</li>
+                                    <li>在下列機關團體，擔任本國團體或法人之董事長職務，或占本國團體或法人之董事、監察人、執行業務或代表公司之股東等各項職務總名額超過三分之一以上者，或占股份有限公司之股權百分之三十以上或無限公司、兩合公司、有限公司之股東及一般法人、團體之社員人數超過三分之一以上者，均不得捐贈。</li>
+                                    <ul>
+                                        <li>外國人民、法人、團體或其他機構，或主要成員為外國人民、法人、團體或其他機構之法人、團體或其他機構。</li>
+                                        <li>大陸地區人民、法人、團體或其他機構，或主要成員為大陸地區人民、法人、團體或其他機構之法人、團體或其他機構。</li>
+                                        <li>香港、澳門居民、法人、團體或其他機構，或主要成員為香港、澳門居民、法人、團體或其他機構之法人、團體或其他機構。</li>
+                                    </ul>
+                                </ul>
+                                <div class="onymous center">
+                                    <input type="checkbox" name="notice" value="1" id="notice">
+                                    <label for="notice">&nbsp;本人已閱讀上述注意事項並且無上述之應注意而無法捐贈之情事。</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="method box">
+                            <div class="title">捐款方式</div>
+                            <div class="table">
+                                <table cellpadding="0" cellspacing="0">
+                                    <tbody><tr>
+                                            <td class="key">請選擇捐款方式</td>
+                                            <td class="value">
+
+                                                <input type="radio" name="method" value="1" id="payment_openpay_type_credit"><label for="payment_openpay_type_credit">&nbsp;信用卡</label>
+
+                                                <input type="radio" name="method" value="2" id="payment_openpay_type_vacc"><label for="payment_openpay_type_vacc">&nbsp;ATM 轉帳捐款</label>
+
+                                                <input type="radio" name="method" value="4" id="payment_openpay_type_webatm"><label for="payment_openpay_type_webatm">&nbsp;WebATM</label>
+
+                                                <input type="radio" name="method" value="8" id="payment_openpay_type_cvs"><label for="payment_openpay_type_cvs">&nbsp;列印條碼便利商店付款</label>
+
+                                                <input type="radio" name="method" value="9" id="payment_openpay_type_ibon"><label for="payment_openpay_type_ibon">&nbsp;7-11 ibon</label>
+
+                                                <input type="radio" name="method" value="12" id="payment_openpay_type_famiport"><label for="payment_openpay_type_famiport">&nbsp;全家 FamiPort</label>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="key">捐款金額</td>
+                                            <td class="value">新台幣<input type="text" name="amount">元</td>
+                                        </tr>
+                                    </tbody></table>
+                            </div>
+                        </div>
+                        <div class="payNote box">
+                            <div class="title">付款工具說明</div>
+                            <div class="content">
+                                <p><span class="listItem">◎</span>信用卡：線上輸入卡號等資訊（請放心，我們不存留卡號）。<span class="red">※單筆上限三萬元，手續費：2.8%</span></p>
+                                <p><span class="listItem">◎</span>ATM 轉帳捐款：請使用您專屬的虛擬帳號，於繳費期限前（七天）使用實體或網路ATM轉帳指定帳號。<span class="red">※單筆上限三萬元，手續費：0.5%（最高 50 元）</span></p>
+                                <p><span class="listItem">◎</span>WebATM：使用晶片卡與讀卡機，線上轉帳。<span class="red">※單筆上限三萬元，手續費：2%（最低 3.5 最高 15 元）</span></p>
+                                <p><span class="listItem">◎</span>列印條碼便利商店付款：依操作步驟說明，於螢幕顯示條碼，請列印後，自行到各大便利商店繳費。<span class="red">※單筆上限兩萬元，手續費：NT$20</span></p>
+                                <p><span class="listItem">◎</span>便利商店代碼 (7-11 ibon)：依操作步驟說明，於螢幕顯示 ibon 繳費代碼，請抄寫或列印後，自行到 7-11 操作 / 繳費。<span class="red">※單筆上限兩萬元，手續費：NT$30</span></p>
+                                <p><span class="listItem">◎</span>便利商店代碼 (全家 FamiPort)：依操作步驟說明，於螢幕顯示繳費代碼，請抄寫或列印後，自行到全家繳費。<span class="red">※單筆上限兩萬元，手續費：NT$30</span></p>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <input type="hidden" name="anonymous" value="0">
+                            <input type="submit" value="確認捐款並進行繳費" id="submit">
+                        </div>
+                    </form>
+                </div>
+
+                <script type="text/javascript">
+                    <!--
+                        function isAnonymous() {
+                        return !!$('#anonymous:checked').length;
+                    }
+
+                    function appendErrorMsg($target, msg) {
+                        if (!$target.find('> .error').length) {
+                            $target.append('<span class="error">' + msg + '</span>');
+                        }
+                    }
+
+                    $('#donateForm').submit(function(e) {
+                        var ok = true;
+                        var $go = undefined;
+                        var check = {
+                            'anonymous': {
+                                'anonymous_email': {
+                                    'msg': '格式錯誤，範例：email@google.com',
+                                    'checkFunction': function(text) {
+                                        if ($('#anonymous_event:checked').length) {
+                                            return /^.+@.+\..{2,3}$/.test(text);
+                                        } else {
+                                            return true;
+                                        }
+                                    }
+                                },
+                                'amount': {
+                                    'msg': '請先選擇捐款方式',
+                                    'checkFunction': function(text) {
+                                        var method = $('input[name=method]:checked').val();
+
+                                        if (!method) {
+                                            return false;
+                                        }
+
+                                        this.msg = '金額必須為介於 100 至 10000 的正整數';
+
+                                        if (!/\d*/.test(text)) {
+                                            return false;
+                                        }
+
+                                        if (parseInt(text) < 100 || parseInt(text) > 10000) {
+                                            return false;
+                                        }
+
+                                        return true;
+                                    }
+                                }
+                            },
+                            'onymous': {
+                                'name': {
+                                    'msg': '欄位不得為空',
+                                    'checkFunction': function(text) {
+                                        return !!text.length;
+                                    }
+                                },
+                                'idn': {
+                                    'msg': '格式錯誤，範例：A123456789',
+                                    'checkFunction': function(id) {
+                                        var tab = "ABCDEFGHJKLMNPQRSTUVXYWZIO";
+                                        var A1 = new Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3);
+                                        var A2 = new Array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5);
+                                        var Mx = new Array(9, 8, 7, 6, 5, 4, 3, 2, 1, 1);
+
+                                        if (!/^[A-Z][1-2]\d{8,8}$/i.test(id)) {
+                                            return false;
+                                        }
+
+                                        var i = tab.indexOf(id.charAt(0));
+                                        var sum = A1[i] + A2[i] * 9;
+
+                                        for (var j = 1; j <= 9; j++) {
+                                            var v = parseInt(id.charAt(j));
+                                            sum += v * Mx[j];
+                                        }
+
+                                        if (sum % 10) {
+                                            return false;
+                                        }
+
+                                        return true;
+                                    }
+                                },
+                                'mobile': {
+                                    'msg': '格式錯誤，範例：0987654321',
+                                    'checkFunction': function(text) {
+                                        return /^09\d{8,8}$/.test(text);
+                                    }
+                                },
+                                'tel': {
+                                    'msg': '欄位不得為空',
+                                    'checkFunction': function(text) {
+                                        return !!text.length;
+                                    }
+                                },
+                                'email': {
+                                    'msg': '格式錯誤，範例：email@google.com',
+                                    'checkFunction': function(text) {
+                                        return /^.+@.+\..{2,3}$/.test(text);
+                                    }
+                                },
+                                'zipcode': {
+                                    'msg': '格式錯誤，範例：12345',
+                                    'checkFunction': function(text) {
+                                        return /^\d{5,5}$/.test(text);
+                                    }
+                                },
+                                'address': {
+                                    'msg': '欄位不得為空',
+                                    'checkFunction': function(text) {
+                                        return !!text.length;
+                                    }
+                                },
+                                'receipt': {
+                                    'msg': '欄位不得為空',
+                                    'checkFunction': function(text) {
+                                        return !!text.length;
+                                    }
+                                },
+                                'notice': {
+                                    'msg': '您必須閱讀並勾選此項目',
+                                    'checkFunction': function(text) {
+                                        return !!$('#notice:checked').length;
+                                    }
+                                },
+                                'amount': {
+                                    'msg': '請先選擇捐款方式',
+                                    'checkFunction': function(text) {
+                                        var method = $('input[name=method]:checked').val();
+                                        var methodLimit = {
+                                            1: 30000,
+                                            2: 30000,
+                                            4: 30000,
+                                            8: 20000,
+                                            9: 20000,
+                                            11: 100000,
+                                            12: 20000
+                                        };
+
+                                        if (!method) {
+                                            return false;
+                                        }
+
+                                        this.msg = '金額必須為介於 100 至 ' + methodLimit[method] + ' 的正整數';
+
+                                        if (!/\d*/.test(text)) {
+                                            return false;
+                                        }
+
+                                        if (parseInt(text) < 100 || parseInt(text) > methodLimit[method]) {
+                                            return false;
+                                        }
+
+                                        return true;
+                                    }
+                                }
+                            }
+                        };
+                        var checkObj = isAnonymous() ? check.anonymous : check.onymous;
+
+                        $(this).find('.error').remove();
+
+                        $.each(checkObj, function(index, value) {
+                            var $obj = $('input[name=' + index + ']');
+
+                            if (!value.checkFunction.call(this, $obj.val())) {
+                                appendErrorMsg($obj.parent(), value.msg);
+                                ok = false;
+
+                                if (!$go) {
+                                    $go = $obj.parents('.box');
+                                }
+                            }
+                        });
+
+                        if (!ok) {
+                            var $page = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html, body');
+                            $page.stop(true, true).animate({scrollTop: $go.offset().top - 10}, 500);
+                            return e.preventDefault();
+                        }
+
+                        $.ajax({
+                            url: 'http://donate.kptaipei.tw/index.php?i=donation&amp;action=pay'.replace(/&amp;/ig, '&'),
+                            type: 'POST',
+                            dataType: 'HTML',
+                            data: $('#donateForm').serializeArray(),
+                            beforeSend: function() {
+                                $('#submit').prop('disabled', true);
+                            },
+                            success: function(data) {
+                                $('<form>')
+                                        .attr({
+                                            'action': 'https://www.twv.com.tw/openpay/pay.php'.replace(/&amp;/ig, '&'),
+                                            'method': 'POST'
+                                        })
+                                        .append($(data).find('#pay'))
+                                        .hide()
+                                        .appendTo('body')
+                                        .submit();
+                            }
+                        });
+
+                        return e.preventDefault();
+                    });
+
+                    function changeDonaterType() {
+                        if (isAnonymous()) {
+                            $('input[name=anonymous]').val('1');
+                            $('.anonymous').show();
+                            $('.onymous').hide();
+                        } else {
+                            $('input[name=anonymous]').val('0');
+                            $('.anonymous').hide();
+                            $('.onymous').show();
+                        }
+                    }
+
+                    function setSameAsAddress() {
+                        if ($('input[name=sameAsAddress]:checked').length) {
+                            $('#address')
+                                    .prop('disabled', true)
+                                    .val($('#receipt').val());
+                        } else {
+                            $('#address')
+                                    .prop('disabled', false)
+                                    .val('');
+                        }
+                    }
+
+                    function showZipcodeSelect() {
+                        $('#city').val('');
+                        $('#zipcode_select')
+                                .show()
+                                .find('select:not(#city)')
+                                .prop('disabled', true)
+                                .val('')
+                                .find('option[value!=""]').remove();
+                        $('#zipcode_input').hide();
+                    }
+
+                    function showZipcodeInput() {
+                        $('#zipcode_select').hide();
+                        $('#zipcode_input').show();
+                    }
+
+                    function anonymousEmail() {
+                        $('#anonymous_email').prop('disabled', !$('#anonymous_event:checked').length);
+                    }
+
+                    $('input[name=donater]').change(function() {
+                        changeDonaterType();
+                    });
+
+                    $('input[name=sameAsAddress]').change(function() {
+                        setSameAsAddress();
+                    });
+
+                    $('input[name=anonymous_event]').change(function() {
+                        anonymousEmail();
+                    });
+
+                    $('input[name=receipt]')
+                            .change(function() {
+                                if ($('input[name=sameAsAddress]:checked').length) {
+                                    $('#address').val($('#receipt').val());
+                                }
+                            })
+                            .keyup(function() {
+                                $(this).trigger('change');
+                            });
+
+                    var zipcode = {
+                        'city': {
+                            'selector': '#city',
+                            'sonSelector': '#area, #street, #number',
+                            'nextLevelSelector': '#area',
+                            'data': 'city',
+                            'text': 'area_name',
+                            'value': 'area_id'
+                        },
+                        'area': {
+                            'selector': '#area',
+                            'sonSelector': '#street, #number',
+                            'nextLevelSelector': '#street',
+                            'data': 'area',
+                            'text': 'street_name',
+                            'value': 'street_id'
+                        },
+                        'street': {
+                            'selector': '#street',
+                            'sonSelector': '#number',
+                            'nextLevelSelector': '#number',
+                            'data': 'street',
+                            'text': 'number_name',
+                            'value': 'zipcode'
+                        },
+                        'number': {
+                            'selector': '#number',
+                            'nextLevelSelector': '#receipt'
+                        }
+                    };
+
+                    $.each(zipcode, function() {
+                        var _self = this;
+
+                        $(_self.selector).change(function() {
+                            if (_self.data) {
+                                var data = {};
+                                data[_self.data] = $(this).val();
+
+                                if (_self.sonSelector) {
+                                    $(_self.sonSelector)
+                                            .prop('disabled', true)
+                                            .val('')
+                                            .trigger('change')
+                                            .find('option[value!=""]').remove();
+                                }
+
+                                if ($(this).val()) {
+                                    $.ajax({
+                                        url: 'http://donate.kptaipei.tw/index.php?i=donation&amp;action=zipcode'.replace(/&amp;/ig, '&'),
+                                        type: 'POST',
+                                        dataType: 'JSON',
+                                        data: data,
+                                        success: function(data) {
+                                            $.each(data, function() {
+                                                $(_self.nextLevelSelector)
+                                                        .append($('<option>')
+                                                                .text(this[_self.text])
+                                                                .attr('value', this[_self.value])
+                                                                )
+                                                        .prop('disabled', false);
+                                            });
+                                        }
+                                    });
+                                }
+                            } else if ($(this).val() && _self.nextLevelSelector == '#receipt') {
+                                $('#zipcode').val($(this).val());
+                                $(_self.nextLevelSelector)
+                                        .val(
+                                                $('#city option:selected').text() +
+                                                $('#area option:selected').text() +
+                                                $('#street option:selected').text()
+                                                )
+                                        .trigger('change');
+                                showZipcodeInput();
+                            }
+                        });
+                    });
+
+                    $(document).ready(function() {
+                        changeDonaterType();
+                        setSameAsAddress();
+                        anonymousEmail();
+                    });
+-->
+                </script>
+
+            </div>
+
+            <footer class="footer" role="contentinfo">
+                <div id="inner-footer" class="clearfix">
+                    <ul>
+                        <li><a href="http://kptaipei.tw/#">聯絡我們</a></li>
+                        <li><a href="http://kptaipei.tw/#">隱私權宣告</a></li>
+                    </ul>
+                    <p>捐款專線：(02)2564-2900 <span class="source-org copyright">copyright © 2014 <a href="http://donate.kptaipei.tw/">柯文哲官方網站</a>. All Right Reserved</span></p>
+                </div>
+            </footer>
+        </div>
+
+    </body></html>
